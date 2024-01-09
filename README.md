@@ -31,8 +31,8 @@ Commit Structure: the commit object itself stores the changes. This is different
 
 
 ## Todo:
-- [] handle uncommited changes when switching branches
-- [] rebase 
+- [ ] handle uncommited changes when switching branches
+- [ ] rebase 
 
 
 Thus magits approach is not efficient for large file sizes 
