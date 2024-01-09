@@ -144,7 +144,7 @@ class Repository:
             print(f"Branch {branch_name} does not exist.")
 
 
-
+    
     def merge(self, source_branch, destination_branch):
         # a basic merge ASSUMING NO CONFILICT 
         source_branch_path = os.path.join(self.branches_dir, source_branch)
@@ -161,7 +161,7 @@ class Repository:
         else:
             print("Branches not found.")
 
-
+    # todo: handle if not .magit file
     def diff(self, commit_hash1, commit_hash2):
         commit1_path = os.path.join(self.objects_dir, commit_hash1)
         commit2_path = os.path.join(self.objects_dir, commit_hash2)

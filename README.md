@@ -30,7 +30,9 @@ Commit Structure: the commit object itself stores the changes. This is different
 
 
 
-
+## Todo:
+- [] handle uncommited changes when switching branches
+- [] rebase 
 
 
 Thus magits approach is not efficient for large file sizes 
@@ -48,3 +50,5 @@ This has been only done for simplicity, as I am not going to implement remote tr
 Right now merging does not take into account for merge conflicts, nor does it fix divergent branches.
 
 
+## Resources 
+https://www.youtube.com/watch?v=fCtZWGhQBvo
