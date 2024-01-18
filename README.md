@@ -27,6 +27,14 @@ Commits Point to Trees: Each commit in Git points to a tree object
 Direct Staging: when you add a file in magit, the content of the file is stored directly in the staged directory. 
 
 Commit Structure: the commit object itself stores the changes. This is different from Git wwhere a commit points to a tree object representing the repository's directory structure and changes
+Thus magits approach is not efficient for large file sizes 
+
+
+This has been only done for simplicity, as I am not going to implement remote tracking, tags. 
+
+### Merging 
+
+Right now merging does not take into account for merge conflicts, nor does it fix divergent branches.
 
 
 
@@ -34,20 +42,6 @@ Commit Structure: the commit object itself stores the changes. This is different
 - [ ] handle uncommited changes when switching branches
 - [ ] rebase 
 
-
-Thus magits approach is not efficient for large file sizes 
-
-
-### Branches 
-Git:  They are pointers to specific commits. The branch information is stored in the .git/refs/heads directory, with each branch as a separate file containing the commit hash that it points to.
-
-Magit: Similar to Git, branches are also pointers to commits. In Magit, branch information is stored in the branches directory. 
-
-This has been only done for simplicity, as I am not going to implement remote tracking, tags. 
-
-### Merging 
-
-Right now merging does not take into account for merge conflicts, nor does it fix divergent branches.
 
 
 ## Resources 
